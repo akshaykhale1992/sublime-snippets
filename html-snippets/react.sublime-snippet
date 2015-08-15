@@ -1,0 +1,30 @@
+<snippet>
+	<content><![CDATA[
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>${1:React HTML}</title>
+</head>
+<body>
+	<!-- Loading React and JSXTransformer from CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/react.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.1/JSXTransformer.js"></script>
+	<script type="text/jsx;">
+		
+		var ${2:HelloWorld} = React.createClass({
+			render: function(){
+				return <div>
+					${3:React Hello World}
+				</div>;
+			}
+		});
+
+		React.render(<${2:HelloWorld}/>, document.body);
+
+	</script>
+</body>
+</html>
+]]></content>
+<tabTrigger>react</tabTrigger>
+</snippet>
